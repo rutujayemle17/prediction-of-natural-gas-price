@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Natural Gas Price Prediction{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Natural Gas Price Prediction</h1>
+    <form action="{{ url_for('prediction') }}" method="post">
+        <label for="year">Year:</label>
+        <input type="number" id="year" name="year" required>
+        
+        <label for="month">Month (1-12):</label>
+        <input type="number" id="month" name="month" min="1" max="12" required>
+        
+        <label for="day">Day (1-31):</label>
+        <input type="number" id="day" name="day" min="1" max="31" required>
+        
+        <button type="submit">Predict</button>
+    </form>
+    {% if prediction_text %}
+        <h2>{{ prediction_text }}</h2>
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}About Us{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>About Our Natural Gas Price Prediction Project</h1>
+    
+    <section>
+        <h2>Project Overview</h2>
+        <p>
+            This project aims to develop a machine learning model to predict the price of natural gas based on historical data.
+            By analyzing patterns and trends in historical price data, along with contextual factors such as the year, month, and day, 
+            the model provides accurate forecasts for future prices. The application is designed to help stakeholders in energy trading, 
+            production planning, and risk management make informed decisions.
+        </p>
+    </section>
+
+    <section>
+        <h2>Technology Stack</h2>
+        <p>
+            The project utilizes the following technologies:
+        </p>
+        <ul>
+            <li><strong>Flask:</strong> A lightweight web framework for building the web application.</li>
+            <li><strong>Scikit-Learn:</strong> A Python library used for developing and training the machine learning model.</li>
+            <li><strong>NumPy:</strong> A library for numerical operations on data.</li>
+            <li><strong>Pandas:</strong> A library for data manipulation and analysis.</li>
+            <li><strong>HTML/CSS:</strong> For structuring and styling the web pages.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>How It Works</h2>
+        <p>
+            The application allows users to input the year, month, and day to get a prediction of the natural gas price for that specific date.
+            The machine learning model is trained on historical data and incorporates features such as the date to make accurate predictions.
+            The system is designed to be user-friendly, providing an intuitive interface for users to interact with the model and receive predictions
+        </p>
+
+{% endblock %}
